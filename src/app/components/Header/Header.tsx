@@ -37,17 +37,17 @@ const Header: React.FC = () => {
 
   return (
     <div className="max-w-[1280px] w-full mx-auto px-4 flex justify-between items-center h-[70px] md:h-full  border-b border-gray-200 flex gap-2">
-      <LogoIcon className="w-[131px] md:w-[144px] h-[31px] md:h-[68px]" />
+      <LogoIcon className="w-[121px] md:w-[144px] h-[31px] md:h-[68px]" />
       <div>
         <div className="flex gap-2 md:gap-4">
             <div className="relative" ref={dropdownRef}>
-              <div className="w-full">
+              <div className="w-full ">
                 <div
                   className="w-[158px] md:w-[170px] w-full h-[36px] md:h-[46px] bg-gradient-to-b from-[#e7ede6] to-[#f8f9fa] rounded-[32px] shadow-[0px_4px_12px_0px_rgba(35,69,30,0.10)] shadow-[inset_-2px_2px_4px_0px_rgba(255,255,255,0.25)] shadow-[inset_2px_-2px_4px_0px_rgba(0,0,0,0.05)] border border-black/10 overflow-hidden cursor-pointer"
                   onClick={toggleDropdown}
                 >
-                  <div className="flex items-center h-full p-3">
-                    <div className="font-open text-[17px] ml-2 md:ml-[10px] mr-2 md:mr-[19px] w-full">
+                  <div className="flex items-center h-full p-2 xs:p-3">
+                    <div className="font-open xs:text-[17px] ml-1 md:ml-[10px] mr-1 md:mr-[19px] w-full">
                       {selectedSocket}
                     </div>
                     <ArrowIcon width={24} height={24} />
@@ -69,7 +69,7 @@ const Header: React.FC = () => {
               </div>
             </div>
             <div className="w-[36px]  md:w-[46px] h-[36px]  md:h-[46px] bg-gradient-to-b from-[#e7ede6] to-[#f8f9fa] rounded-[32px] shadow-[0px_4px_12px_0px_rgba(35,69,30,0.10)] shadow-[inset_-2px_2px_4px_0px_rgba(255,255,255,0.25)] shadow-[inset_2px_-2px_4px_0px_rgba(0,0,0,0.05)] border border-black/10 overflow-hidden cursor-pointer flex items-center justify-center">
-                <PlusIcon />
+                <PlusIcon className='flex-shrink-0'/>
             </div>
         </div>
       </div>
