@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import EyesIcon from "../../../public/socket/eyes.svg";
 import MinusIcon from "../../../public/socket/minus.svg";
 import PlusIcon from "../../../public/socket/plus.svg";
+import RemoveIcon from "../../../public/socket/remove.svg";
+import EditIcon from "../../../public/socket/edit.svg";
 
 export default function Home() {
   const [isEnabled, setIsEnabled] = useState(true);
@@ -34,7 +36,17 @@ export default function Home() {
   return (
     <div className="p-4 flex flex-col w-full">
       <div className="flex-shrink flex-col gap-4">
-        <div className="font-open-semibold text-5xl">Розетка №1</div>
+        <div className="font-open-semibold text-4xl sm:text-5xl flex items-center gap-4">
+          <div>Розетка №1</div>
+          <div className="flex items-center gap-2">
+          <div className="w-[36px]  md:w-[46px] h-[36px]  md:h-[46px] bg-gradient-to-b from-[#e7ede6] to-[#f8f9fa] rounded-[32px] shadow-[0px_4px_12px_0px_rgba(35,69,30,0.10)] shadow-[inset_-2px_2px_4px_0px_rgba(255,255,255,0.25)] shadow-[inset_2px_-2px_4px_0px_rgba(0,0,0,0.05)] border border-black/10 overflow-hidden cursor-pointer flex items-center justify-center">
+                <EditIcon className='flex-shrink-0 w-[22px] h-[22px]'/>
+            </div>
+            <div className="w-[36px]  md:w-[46px] h-[36px]  md:h-[46px] bg-gradient-to-b from-[#e7ede6] to-[#f8f9fa] rounded-[32px] shadow-[0px_4px_12px_0px_rgba(35,69,30,0.10)] shadow-[inset_-2px_2px_4px_0px_rgba(255,255,255,0.25)] shadow-[inset_2px_-2px_4px_0px_rgba(0,0,0,0.05)] border border-black/10 overflow-hidden cursor-pointer flex items-center justify-center">
+                <RemoveIcon className='flex-shrink-0 w-[20px] h-[20px]'/>
+            </div>
+          </div>
+        </div>
         <div className="flex items-center gap-3">
           {isEnabled ? (
             <span className="font-open text-xl">В сети</span>

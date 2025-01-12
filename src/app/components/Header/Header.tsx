@@ -3,7 +3,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import LogoIcon from "../../../../public/logo-main.svg";
 import ArrowIcon from "../../../../public/auth-header/arrow-down.svg";
-import MinusIcon from "../../../../public/socket/minus.svg";
 import PlusIcon from "../../../../public/socket/plus.svg";
 
 const Header: React.FC = () => {
